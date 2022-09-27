@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="1.png.PNG">
+    <title>Developpeursiteweb_dz</title>
+</head>
+
+<body class="body">  
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 915px;
+    background: linear-gradient(45deg, 
+    orangered, 
+    teal);
+}
+
+/* changeur de thème */
+.body {
+    padding: 50px;
+    background-color: white;
+    color: orangered;
+    font-size: 25px;
+  }
+  
+  /*  */
+
+  .dark-mode {
+    background: linear-gradient(90deg,
+     rgb(38, 38, 129),
+      skyblue);
+    color: white;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 10px;}
+  .fig{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0px 2.7px 2.7px 0px whitesmoke;
+    background-color: rgb(20, 20, 20, 0.3);
+    height: 110px;
+    width: 412px;}
+
+ /*  */
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100px;
+    border: none;
+    box-shadow: 1px 1px 1em white;
+    border-radius: 70px;
+    background: linear-gradient(45deg,
+     orangered, 
+     teal);
+    animation: 2s infinite btn;
+  }
+  @keyframes btn{
+    50%{
+        background: linear-gradient(90deg,
+         rgb(38, 38, 129),
+         skyblue);
+    }
+  }
+
+  /*  */
+
+  .icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: row;
+    width: 200px;
+  }
+  .img{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+.h1{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 25px;
+  }
+    </style>
+    <!-- haut de page -->
+    <!-- icon+nom -->
+    <div class="container">
+    <div class="fig">
+        <div class="icon">
+            <img class="img" src="1.png.PNG" alt="">
+            <h1 class="h1">Frontend  </h1>
+        </div>
+        <!-- button RGB -->
+        <button class="btn" onclick="myFunction()"></button>
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+    </script>
+    <script src="code.js"></script>
+
+</body>
+</html>
+
